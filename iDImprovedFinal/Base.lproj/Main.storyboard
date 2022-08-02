@@ -44,7 +44,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7en-DB-cuY">
                                         <rect key="frame" x="104" y="387" width="207" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.99959379429999995" green="0.65769082310000004" blue="0.21815711260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99959379429999995" green="0.7800642874" blue="0.23485834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.86190634970000002" green="0.52356493469999998" blue="0.1194018349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,7 +53,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWS-A8-NCb">
                                         <rect key="frame" x="104" y="461" width="207" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.99959379429999995" green="0.65769082310000004" blue="0.21815711260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99959379429999995" green="0.7800642874" blue="0.23485834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.86190634970000002" green="0.52356493469999998" blue="0.1194018349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -113,7 +113,7 @@
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="mjy-LG-Ira"/>
-                                <color key="backgroundColor" red="0.65430492159999998" green="0.80859500169999998" blue="0.79716688390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.61841599746865927" green="0.80677433206577498" blue="0.7335593072087021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.65430492159999998" green="0.80859500169999998" blue="0.79716688390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -141,8 +141,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Uiy-hw-iF6">
                                         <rect key="frame" x="259" y="45.5" width="135" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.99959379429999995" green="0.65769082310000004" blue="0.21815711260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" red="0.86190634970000002" green="0.52356493469999998" blue="0.1194018349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99959379429999995" green="0.7800642873944853" blue="0.2348583400451803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.86190634970000002" green="0.60141785723535346" blue="0.11118373791967524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jane Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN7-4t-IEB">
                                         <rect key="frame" x="36" y="65" width="120" height="36"/>
@@ -200,7 +200,7 @@
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="Aeg-2f-T5G"/>
-                                <color key="backgroundColor" red="0.65430492159999998" green="0.80859500169999998" blue="0.79716688390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.62134748699999998" green="0.80652225020000001" blue="0.73509073260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dgk-IG-2bD"/>
