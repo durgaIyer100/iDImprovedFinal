@@ -223,36 +223,24 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Health"/>
-                                        <connections>
-                                            <action selector="health:" destination="FIj-XM-ha6" eventType="touchUpInside" id="ZVK-RP-joP"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r47-RQ-bFF">
                                         <rect key="frame" x="36" y="343" width="96" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Medication"/>
-                                        <connections>
-                                            <action selector="medicationButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="0S4-6g-eEw"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zy-PC-BCD">
                                         <rect key="frame" x="20" y="403" width="152" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Emergency Contact"/>
-                                        <connections>
-                                            <action selector="emergencyContactButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="rpA-XG-gWa"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9r-AL-U7M">
                                         <rect key="frame" x="259" y="343" width="101" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Assisstance"/>
-                                        <connections>
-                                            <action selector="assisstanceButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="pmR-sP-brA"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Had-vY-Vbe">
                                         <rect key="frame" x="36" y="276" width="143" height="31"/>
@@ -260,7 +248,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Diet and Allergens"/>
                                         <connections>
-                                            <action selector="dietButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="rVl-1R-8V3"/>
+                                            <action selector="dietButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="n43-uu-czD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBh-J4-9lF">
@@ -268,9 +256,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Address"/>
-                                        <connections>
-                                            <action selector="addressButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="YKp-jX-PzV"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eif-jm-XXW">
                                         <rect key="frame" x="344" y="686" width="58" height="31"/>
@@ -278,9 +263,6 @@
                                         <color key="tintColor" red="0.65882354970000001" green="0.80392158030000005" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Clear"/>
-                                        <connections>
-                                            <action selector="clear:" destination="FIj-XM-ha6" eventType="touchUpInside" id="l2S-2D-J3b"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="Aeg-2f-T5G"/>
@@ -292,15 +274,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="jpN-iW-Vc1"/>
                     <connections>
-                        <outlet property="addressButton" destination="DBh-J4-9lF" id="bat-gY-fmZ"/>
-                        <outlet property="assisstanceButton" destination="v9r-AL-U7M" id="W1Y-6D-af1"/>
-                        <outlet property="clear" destination="eif-jm-XXW" id="GIk-os-gAW"/>
-                        <outlet property="dietButton" destination="Had-vY-Vbe" id="CqU-4b-1HD"/>
-                        <outlet property="emergencyContactButton" destination="1zy-PC-BCD" id="JWM-qr-uXL"/>
-                        <outlet property="health" destination="DPi-KG-MNF" id="O7h-qY-hKc"/>
-                        <outlet property="infoBox" destination="WM5-t5-XW1" id="ugi-lH-YFR"/>
-                        <outlet property="medicationButton" destination="r47-RQ-bFF" id="yHV-rO-7uh"/>
-                        <outlet property="notepadButton" destination="bZR-vK-lvx" id="Zqt-Fo-4QT"/>
+                        <outlet property="dietButton" destination="Had-vY-Vbe" id="bij-I0-W2X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMh-oJ-aF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -370,7 +344,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="8e7-le-rXX"/>
-        <segue reference="zz0-1t-LLt"/>
+        <segue reference="jlU-r5-4mH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>

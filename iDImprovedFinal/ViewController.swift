@@ -28,15 +28,6 @@ class ViewController: UIViewController {
     @IBAction func passWord(_ sender: UITextField) {
     }
     
-    func textFieldShouldReturn(_ userName: UITextField) -> Bool {
-        userName.resignFirstResponder()
-        return(true)
-    }
-
-    func textFieldShouldReturnTwo(_ passWord: UITextField) -> Bool {
-        passWord.resignFirstResponder()
-        return(true)
-    }
 
     
 }
