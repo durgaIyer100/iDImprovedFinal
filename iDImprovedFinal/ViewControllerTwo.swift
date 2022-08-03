@@ -12,6 +12,7 @@ class ViewControllerTwo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        infoBox.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -48,6 +49,15 @@ class ViewControllerTwo: UIViewController {
     @IBAction func addressButton(_ sender: UIButton) {
     }
     
+    @IBOutlet weak var infoBox: UILabel!
+    
+    @IBOutlet weak var clear: UIButton!
+    
+    @IBAction func clear(_ sender: UIButton) {
+        
+        infoBox.isHidden = false
+        
+    }
     
     
     
