@@ -58,7 +58,7 @@ class ViewControllerTwo: UIViewController {
         infoBox.isHidden = false
         
     }
-    
+
     
     
     /*    // MARK: - Navigation

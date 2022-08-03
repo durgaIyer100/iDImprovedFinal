@@ -48,7 +48,10 @@
                                         <color key="tintColor" red="0.86190634970000002" green="0.52356493469999998" blue="0.1194018349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="userName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fjZ-0u-eYu"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWS-A8-NCb">
                                         <rect key="frame" x="104" y="461" width="207" height="34"/>
@@ -58,6 +61,10 @@
                                         <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="passWord:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="EBZ-ZP-iCW"/>
+                                            <action selector="passWordButton:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fyb-R4-A4R"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocb-3Y-oJX">
                                         <rect key="frame" x="81" y="641" width="253" height="51"/>
@@ -108,7 +115,8 @@
                                             <color key="baseBackgroundColor" red="0.22163254020000001" green="0.37162691349999999" blue="0.44276541470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="FIj-XM-ha6" kind="show" id="y82-Sf-gWE"/>
+                                            <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3e-jC-Bs6"/>
+                                            <segue destination="FIj-XM-ha6" kind="show" id="8e7-le-rXX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -121,6 +129,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1R8-ZB-hFr"/>
+                    <connections>
+                        <outlet property="passWord" destination="gWS-A8-NCb" id="XeX-mV-AT4"/>
+                        <outlet property="userName" destination="7en-DB-cuY" id="Mmp-vB-TWR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,7 +194,7 @@
                                             <color key="baseForegroundColor" red="0.65430492159999998" green="0.80859500169999998" blue="0.79716688390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="9MH-qm-odI" kind="show" id="2SI-Or-d4C"/>
+                                            <segue destination="9MH-qm-odI" kind="show" id="iXv-fS-ceH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0s-5V-uVe">
@@ -288,6 +300,7 @@
                         <outlet property="health" destination="DPi-KG-MNF" id="O7h-qY-hKc"/>
                         <outlet property="infoBox" destination="WM5-t5-XW1" id="ugi-lH-YFR"/>
                         <outlet property="medicationButton" destination="r47-RQ-bFF" id="yHV-rO-7uh"/>
+                        <outlet property="notepadButton" destination="bZR-vK-lvx" id="Zqt-Fo-4QT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMh-oJ-aF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -356,8 +369,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y82-Sf-gWE"/>
-        <segue reference="jlU-r5-4mH"/>
+        <segue reference="8e7-le-rXX"/>
+        <segue reference="zz0-1t-LLt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>

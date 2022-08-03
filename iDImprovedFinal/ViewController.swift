@@ -14,6 +14,30 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func signInButton(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var userName: UITextField!
+    
+    @IBAction func userName(_ sender: UITextField) {
+    }
+    
+    
+    @IBOutlet weak var passWord: UITextField!
+    
+    @IBAction func passWord(_ sender: UITextField) {
+    }
+    
+    func textFieldShouldReturn(_ userName: UITextField) -> Bool {
+        userName.resignFirstResponder()
+        return(true)
+    }
 
+    func textFieldShouldReturnTwo(_ passWord: UITextField) -> Bool {
+        passWord.resignFirstResponder()
+        return(true)
+    }
+
+    
 }
 
