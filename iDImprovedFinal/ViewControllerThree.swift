@@ -9,13 +9,25 @@ import UIKit
 
 class ViewControllerThree: UIViewController {
 
+    @IBOutlet weak var myNotes: UITextView!
+    
+    let notesValue = "notesValue"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+//        if let notesValue = UserDefaults(suiteName: notesValue) {
+//            myNotes.text = notesValue as? String
+//
+//        }
     }
+}
+
     
 
+    
     /*
     // MARK: - Navigation
 
@@ -24,6 +36,22 @@ class ViewControllerThree: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
+     
+     Class MainVC: UIViewControllerThree {
+         
+         @IBOutlet weak var myNotes: UITextView!
+
+         let notesValue = “notesValue”
+
+         Override func viewDidLoad(){
+             super.viewDidLoad()
+
+             if let notesValue = UserDefualts.standard.value(forKey: notesValue) {
+                 myNotes.text = notesValue as! String        }
+         }
+     }
+
+     
     */
 
-}
+
