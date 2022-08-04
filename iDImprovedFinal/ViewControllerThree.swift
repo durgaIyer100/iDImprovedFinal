@@ -11,7 +11,7 @@ class ViewControllerThree: UIViewController {
 
     @IBOutlet weak var myNotes: UITextView!
     
-    let notesValue = "notesValue"
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +20,28 @@ class ViewControllerThree: UIViewController {
         
 //        if let notesValue = UserDefaults(suiteName: notesValue) {
 //            myNotes.text = notesValue as? String
+        
+//        userNotes.set("Placeholder", forKey: notesValue)
 //
 //        }
+        
     }
+    @IBAction func save(_ sender: Any) {
+        
+        let text = myNotes.text
+       
+        defaults.set(text, forKey: "text")
+        
+    }
+    
+    @IBAction func load(_ sender: Any) {
+        
+        let text = defaults.string(forKey: "text")
+       
+        myNotes.text = text
+        
+    }
+    
 }
 
     
@@ -50,6 +69,25 @@ class ViewControllerThree: UIViewController {
                  myNotes.text = notesValue as! String        }
          }
      }
+
+     @IBOutlet weak var textLabel: UILabel!
+     @IBOutlet weak var textField: UITextField!
+    
+     let defaults = UserDefaults.standard
+
+
+
+     override func viewDidLoad() {
+         super.viewDidLoad()
+     }
+
+
+
+     @IBAction func saveButton(_ sender: Any) {
+        
+         let text = textField.text
+        
+
 
      
     */

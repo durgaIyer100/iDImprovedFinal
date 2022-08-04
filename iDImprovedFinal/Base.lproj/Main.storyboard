@@ -387,6 +387,33 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="zz0-1t-LLt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBH-Bs-cvm">
+                                <rect key="frame" x="314" y="582" width="71" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22163254020000001" green="0.37162691349999999" blue="0.44276541470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                    <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.65430492159999998" green="0.80859500169999998" blue="0.79716688390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="save:" destination="9MH-qm-odI" eventType="touchUpInside" id="1ai-Bp-hsF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6W-X5-ZTX">
+                                <rect key="frame" x="37" y="578" width="67" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22163254020000001" green="0.37162691349999999" blue="0.44276541470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load">
+                                    <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.65430492159999998" green="0.80859500169999998" blue="0.79716688390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="load:" destination="9MH-qm-odI" eventType="touchUpInside" id="yMj-y1-Rvj"/>
+                                    <action selector="save:" destination="9MH-qm-odI" eventType="touchUpInside" id="GaA-1z-0zq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nZG-fg-lYd"/>
                         <color key="backgroundColor" red="0.65430492159999998" green="0.80859500169999998" blue="0.79716688390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -402,7 +429,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LTa-qK-EYr"/>
+        <segue reference="a4b-9i-6f2"/>
         <segue reference="zz0-1t-LLt"/>
     </inferredMetricsTieBreakers>
     <resources>
