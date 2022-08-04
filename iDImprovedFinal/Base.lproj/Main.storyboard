@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="Xv5-Ky-TsU">
-                                <rect key="frame" x="0.0" y="0.0" width="413" height="841"/>
+                                <rect key="frame" x="0.0" y="0.0" width="413" height="840"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID Improved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oI9-EB-ITX">
@@ -60,7 +60,7 @@
                                         <color key="tintColor" red="0.86190634970000002" green="0.52356493469999998" blue="0.1194018349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <connections>
                                             <action selector="passWord:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="EBZ-ZP-iCW"/>
                                             <action selector="passWordButton:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fyb-R4-A4R"/>
@@ -275,7 +275,7 @@
                                             <color key="baseForegroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="dietButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="n43-uu-czD"/>
+                                            <action selector="diet:" destination="FIj-XM-ha6" eventType="touchUpInside" id="iWz-Qt-fta"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eif-jm-XXW">
@@ -327,7 +327,7 @@
                         <outlet property="address" destination="DBh-J4-9lF" id="uUW-Kz-fwq"/>
                         <outlet property="assisstance" destination="v9r-AL-U7M" id="TT8-It-1LW"/>
                         <outlet property="clear" destination="eif-jm-XXW" id="fe2-v2-Usi"/>
-                        <outlet property="dietButton" destination="Had-vY-Vbe" id="bij-I0-W2X"/>
+                        <outlet property="diet" destination="Had-vY-Vbe" id="NfH-hu-2D2"/>
                         <outlet property="emergencyContact" destination="1zy-PC-BCD" id="XuU-Zb-S2d"/>
                         <outlet property="health" destination="DPi-KG-MNF" id="tF5-uZ-PgA"/>
                         <outlet property="infoBox" destination="WM5-t5-XW1" id="a7i-RY-fsU"/>
