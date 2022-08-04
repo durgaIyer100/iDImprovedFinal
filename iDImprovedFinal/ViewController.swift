@@ -9,6 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userName: UITextField!
+    
+    @IBOutlet weak var passWord: UITextField!
+    
+    @IBOutlet weak var signInLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,7 +32,7 @@ class ViewController: UIViewController {
             
         } else{
             
-          // make incorrect password label
+            signInLabel.text = "Incorrect username or password"
             
         }
 
@@ -34,13 +40,8 @@ class ViewController: UIViewController {
         
     }
     
-    @IBOutlet weak var userName: UITextField!
-    
     @IBAction func userName(_ sender: Any) {
     }
-    
-    
-    @IBOutlet weak var passWord: UITextField!
     
     @IBAction func passWord(_ sender: Any) {
     }

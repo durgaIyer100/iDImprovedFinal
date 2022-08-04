@@ -9,7 +9,7 @@ import UIKit
 
 class ViewControllerTwo: UIViewController {
 
-    @IBOutlet weak var dietButton: UIButton!
+    @IBOutlet weak var diet: UIButton!
     
     @IBOutlet weak var health: UIButton!
     
@@ -33,11 +33,11 @@ class ViewControllerTwo: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func dietButton(_ sender: Any) {
+    @IBAction func diet(_ sender: Any) {
         
         infoBox.isHidden = false
         
-        infoBox.text = "Allergic to peanuts"
+        infoBox.text = "Allergic to peanuts - severe"
 
         
     }
@@ -46,7 +46,7 @@ class ViewControllerTwo: UIViewController {
         
         infoBox.isHidden = false
         
-        infoBox.text = "No health conditions"
+        infoBox.text = "Severe peanut allergy"
 
         
     }
@@ -55,7 +55,7 @@ class ViewControllerTwo: UIViewController {
         
         infoBox.isHidden = false
         
-        infoBox.text = "carries an EpiPen"
+        infoBox.text = "Carries an EpiPen"
         
     }
     

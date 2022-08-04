@@ -34,8 +34,8 @@
                                         <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign in to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC4-AZ-v69">
-                                        <rect key="frame" x="85" y="250" width="244" height="59"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign in to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC4-AZ-v69">
+                                        <rect key="frame" x="85" y="232" width="244" height="103"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
                                         <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,6 +130,7 @@
                     <navigationItem key="navigationItem" id="1R8-ZB-hFr"/>
                     <connections>
                         <outlet property="passWord" destination="gWS-A8-NCb" id="XeX-mV-AT4"/>
+                        <outlet property="signInLabel" destination="qC4-AZ-v69" id="AZq-GO-hoy"/>
                         <outlet property="userName" destination="7en-DB-cuY" id="Mmp-vB-TWR"/>
                         <segue destination="FIj-XM-ha6" kind="show" identifier="SignInSegue" id="LTa-qK-EYr"/>
                     </connections>
@@ -185,7 +186,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZR-vK-lvx">
-                                        <rect key="frame" x="36" y="766" width="151" height="38"/>
+                                        <rect key="frame" x="43" y="762" width="151" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.22163254020000001" green="0.37162691349999999" blue="0.44276541470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
@@ -198,7 +199,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0s-5V-uVe">
-                                        <rect key="frame" x="280" y="766" width="109" height="38"/>
+                                        <rect key="frame" x="267" y="762" width="109" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.22163254020000001" green="0.37162691349999999" blue="0.44276541470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
@@ -210,61 +211,75 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="jlU-r5-4mH"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Information goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-t5-XW1">
-                                        <rect key="frame" x="36" y="499" width="358" height="218"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-t5-XW1">
+                                        <rect key="frame" x="28" y="499" width="358" height="218"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Information goes here">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="25" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" paragraphSpacingBefore="3" firstLineHeadIndent="3" headIndent="3" defaultTabInterval="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-KG-MNF">
-                                        <rect key="frame" x="259" y="276" width="88" height="31"/>
+                                        <rect key="frame" x="288" y="281" width="88" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Health"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Health">
+                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                            <color key="baseForegroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="health:" destination="FIj-XM-ha6" eventType="touchUpInside" id="9dD-ti-HT1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zy-PC-BCD">
-                                        <rect key="frame" x="44" y="403" width="152" height="31"/>
+                                        <rect key="frame" x="42" y="408" width="184" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Emergency Contact"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Emergency Contact">
+                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                            <color key="baseForegroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="emergencyContact:" destination="FIj-XM-ha6" eventType="touchUpInside" id="v4b-JG-dgN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9r-AL-U7M">
-                                        <rect key="frame" x="240" y="343" width="126" height="31"/>
+                                        <rect key="frame" x="250" y="343" width="126" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Assisstance"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Assisstance">
+                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                            <color key="baseForegroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="assisstance:" destination="FIj-XM-ha6" eventType="touchUpInside" id="S7J-hp-XLi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Had-vY-Vbe">
-                                        <rect key="frame" x="44" y="276" width="143" height="31"/>
+                                        <rect key="frame" x="43" y="283" width="173" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Diet and Allergens"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Diet and Allergens">
+                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                            <color key="baseForegroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="dietButton:" destination="FIj-XM-ha6" eventType="touchUpInside" id="n43-uu-czD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBh-J4-9lF">
-                                        <rect key="frame" x="240" y="403" width="105" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Address"/>
-                                        <connections>
-                                            <action selector="address:" destination="FIj-XM-ha6" eventType="touchUpInside" id="WRA-te-SQR"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eif-jm-XXW">
-                                        <rect key="frame" x="344" y="686" width="58" height="31"/>
+                                        <rect key="frame" x="313" y="686" width="74" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.65882354970000001" green="0.80392158030000005" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
@@ -274,12 +289,29 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r47-RQ-bFF">
-                                        <rect key="frame" x="44" y="343" width="127" height="31"/>
+                                        <rect key="frame" x="42" y="343" width="127" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Medication"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Medication">
+                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                            <color key="baseForegroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="medication:" destination="FIj-XM-ha6" eventType="touchUpInside" id="tEb-3D-sPc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBh-J4-9lF">
+                                        <rect key="frame" x="271" y="408" width="105" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.9331763622" blue="0.78446211190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Address">
+                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                            <color key="baseForegroundColor" red="0.13632364520000001" green="0.20788318380000001" blue="0.32039449669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="address:" destination="FIj-XM-ha6" eventType="touchUpInside" id="WRA-te-SQR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -321,13 +353,13 @@
                                 <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My notes:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ojO-LA-Ay8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My notes:" translatesAutoresizingMaskIntoConstraints="NO" id="ojO-LA-Ay8">
                                 <rect key="frame" x="37" y="187" width="348" height="429"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99959379429999995" green="0.86867677646400776" blue="0.64546705889693634" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.99959379429999995" green="0.65769082310000004" blue="0.21815711260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.16881638769999999" green="0.25618991260000001" blue="0.38494354489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-r8-H9m">
